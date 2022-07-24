@@ -1,15 +1,15 @@
 package ClassMethodOOP01;
 
-class Dog {
+class Dog1 {
 	int legs;
 	String color, type;
 	boolean isPet;
 	int age;
 	float weight;
-	
-	public Dog() {
-		//default constructor
-		System.out.println("default constructor");
+
+	public Dog1() {
+		// default constructor
+		//System.out.println("default constructor");
 	}
 
 	void run() {
@@ -27,14 +27,14 @@ class Dog {
 	}
 }
 
-public class DogClass {
-
+public class CallingMethodDogClass {
 	public static void main(String[] args) {
 
-		Dog d1;
-		d1 = new Dog();
-		Dog d2 = new Dog();
-		
+		Dog1 d1;
+		d1 = new Dog1();
+		Dog1 d2 = new Dog1();
+		d1.run();
+		d2.sleep();
 
 	}
 

@@ -1,18 +1,24 @@
 package ClassMethodOOP01;
 
-class Dog2 {
+class Cat1 {
 	int legs;
 	String color, type;
 	boolean isPet;
 	int age;
 	float weight;
 
-	public Dog2() {
+	public Cat1() {
 		// default constructor
 		// System.out.println("default constructor");
-
 		legs = 4;
-		color = "red";
+	}
+
+	// Method Overloading
+	public Cat1(int legs, String t, float weight) {
+
+		this.legs = legs;
+		type = t;
+		this.weight = weight;
 
 	}
 
@@ -31,15 +37,13 @@ class Dog2 {
 	}
 }
 
-public class ObjectCallingVariable {
+public class OverloadingConstructor {
 
 	public static void main(String[] args) {
+		Cat1 d1 = new Cat1(3, "Black", 5);
+		Cat1 d2 = new Cat1();
 
-		Dog2 d1 = new Dog2();
-		System.out.println(d1.color);
-		System.out.println(d1.legs);
-		System.out.println(d1.age);
-		System.out.println(d1.isPet);
+		System.out.println("Legs: " + d1.legs);
 
 	}
 

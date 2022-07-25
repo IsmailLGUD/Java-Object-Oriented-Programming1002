@@ -1,18 +1,19 @@
 package ClassMethodOOP01;
 
-class Dog2 {
+class Cat {
 	int legs;
 	String color, type;
 	boolean isPet;
 	int age;
 	float weight;
 
-	public Dog2() {
+	// Method Overloading
+	public Cat() {
 		// default constructor
 		// System.out.println("default constructor");
 
 		legs = 4;
-		color = "red";
+		color = "White";
 
 	}
 
@@ -31,15 +32,15 @@ class Dog2 {
 	}
 }
 
-public class ObjectCallingVariable {
+public class VariableValue {
 
 	public static void main(String[] args) {
 
-		Dog2 d1 = new Dog2();
-		System.out.println(d1.color);
+		Cat d1 = new Cat(), d2 = new Cat();
+		d2.legs = 3;
+
 		System.out.println(d1.legs);
-		System.out.println(d1.age);
-		System.out.println(d1.isPet);
+		System.out.println(d2.legs);
 
 	}
 

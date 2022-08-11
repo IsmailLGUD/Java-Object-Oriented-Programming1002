@@ -9,7 +9,7 @@ public class Person {
 	}
 	
 	public String getName() {
-		return "He is" + name;
+		return "He is " + name;
 	}
 
 }

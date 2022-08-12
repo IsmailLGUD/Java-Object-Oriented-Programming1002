@@ -6,6 +6,7 @@ public class TwoDArrayAddition {
 
 	public static void main(String[] args) {
 		
+		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		int [][]A= new int [2][3];
 		int [][]B= new int [2][3];

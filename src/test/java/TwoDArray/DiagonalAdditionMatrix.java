@@ -32,7 +32,7 @@ public class DiagonalAdditionMatrix {
 		
 		
 		//Diagonal, upper, lower addition
-		System.out.print("Plese enter A Matrix: ");
+		//System.out.print("Plese enter A Matrix: ");
 		for (int row=0; row<3; row++) {
 			for(int col =0; col<3; col++) {
 			

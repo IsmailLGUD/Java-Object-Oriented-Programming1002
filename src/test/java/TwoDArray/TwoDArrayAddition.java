@@ -18,7 +18,6 @@ public class TwoDArrayAddition {
 				A[row][col]= sc.nextInt();
 			}
 		}
-
 		System.out.print("\nA= ");
 		for(int row=0; row <2; row++) {
 			for(int col=0; col <3; col++) {

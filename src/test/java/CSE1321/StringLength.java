@@ -7,7 +7,7 @@ public class StringLength {
 
 		String hw = "Hello World!";
 		System.out.println("Length of the hw is: "+hw.length());
-
+		System.out.println(hw.length()); 
 
 
 

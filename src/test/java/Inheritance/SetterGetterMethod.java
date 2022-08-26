@@ -1,6 +1,5 @@
 package Inheritance;
-
-class Mammal {
+class Mammal1 {
 	public float weight;
 	public int age;
 	private double temp;
@@ -15,16 +14,18 @@ class Mammal {
 		return furColor;
 	}
 
-	public Mammal() {
+	public Mammal1() {
 		// default constructor
 	}
+	
+	public void setTemp(double temp) {
+		this.temp= temp;
+	}
+	
+	public String getTemp() {
+		return "Private Mammal" + temp;
+	}
 
-	public void setTemp(double t) {
-		temp = t;
-	}
-	public double getTemp() {
-		return temp;
-	}
 	public void Eat() {
 		System.out.println("Mammal:: Eat()");
 	}
@@ -38,7 +39,7 @@ class Mammal {
 	}
 }
 
-class Dog extends Mammal {
+class Dog1 extends Mammal {
 	int age;
 	private String name;
 	public boolean isWild;
@@ -48,26 +49,25 @@ class Dog extends Mammal {
 	}
 }
 
-public class InheritanceClass {
+public class SetterGetterMethod {
 
 	public static void main(String[] args) {
-
 		Mammal m1 = new Mammal();
 		m1.Drink();
 		m1.weight = 1.3f;
-		m1.setTemp(12.0);
+		m1.setTemp(12);
 		System.out.println("m1.weight= " + m1.weight);
 		System.out.println(m1.getTemp());
+		
 		m1.setFurColor("Black");
 		System.out.println(m1.getFurColor());
-		
-		
 		
 		Dog d1;
 		d1= new Dog();
 		d1.Bark();
 		d1.age= 12;
 		System.out.println("d1.age= " +d1.age);
+
 	}
 
 }

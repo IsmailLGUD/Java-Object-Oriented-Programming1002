@@ -1,11 +1,23 @@
 package Inheritance;
-class Mammal1 {
+class Mammal2 {
 	public float weight;
 	public int age;
 	private double temp;
 	// private int weight;
 	private double IQ;
 	private String furColor;
+	
+	public Mammal2() {
+		// default constructor
+	}
+	
+
+	public Mammal2(int i, float f) {
+		// TODO Auto-generated constructor stub
+	}
+
+
+	}
 	
 	public void setFurColor(String furColor) {
 		this.furColor = furColor;
@@ -14,16 +26,14 @@ class Mammal1 {
 		return furColor;
 	}
 
-	public Mammal1() {
-		// default constructor
-	}
+	
 	
 	public void setTemp(double temp) {
 		this.temp= temp;
 	}
 	
 	public String getTemp() {
-		return "Private Mammal" + temp;
+		return "Private Mammal= " + temp;
 	}
 
 	public void Eat() {
@@ -39,7 +49,7 @@ class Mammal1 {
 	}
 }
 
-class Dog1 extends Mammal1 {
+class Dog2 extends Mammal2 {
 	int age;
 	private String name;
 	public boolean isWild;
@@ -47,12 +57,21 @@ class Dog1 extends Mammal1 {
 	public void Bark() {
 		System.out.println("Dog:: Bark!!!");
 	}
-}
+	public void Mammal2(int a, ) {
+		age = a;
+		weight = w;
+	}
+	@Override
+	public String toString() {
+		 String s = " Mammal age = " + age + " and weight is " + weight;
+		    return s;
+	}
 
-public class SetterGetterMethod {
+
+public class OverrideToStringMethod {
 
 	public static void main(String[] args) {
-		Mammal1 m1 = new Mammal1();
+		Mammal2 m1 = new Mammal2();
 		m1.Drink();
 		m1.weight = 1.3f;
 		m1.setTemp(12);
@@ -62,11 +81,18 @@ public class SetterGetterMethod {
 		m1.setFurColor("Black");
 		System.out.println(m1.getFurColor());
 		
-		Dog1 d1;
-		d1= new Dog1();
+		
+		Mammal2 m2 = new Mammal2(1, 2.0f);
+		//System.out.println(m2);
+		
+		
+		Dog2 d1;
+		d1= new Dog2();
 		d1.Bark();
 		d1.age= 12;
 		System.out.println("d1.age= " +d1.age);
+
+
 
 	}
 
